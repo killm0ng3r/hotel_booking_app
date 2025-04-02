@@ -1,0 +1,464 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+/* Header on non-hero pages */
+body:not([data-page="home"]) .header {
+  background: #fff;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+body:not([data-page="home"]) .nav-link {
+  color: #333 !important;
+}
+body:not([data-page="home"]) .nav-link:hover {
+  color: #f5c518 !important;
+}
+
+/* Header */
+.header {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar-brand img.logo {
+  height: 40px;
+  background: #f5c518;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+.hero .btn-warning {
+  background-color: #f5c518;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.hero .btn-warning:hover {
+  background-color: #e0b015;
+}
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Rooms Intro */
+/* .rooms-intro {
+  padding: 50px 0;
+}
+.rooms-intro h2 {
+  font-size: 1.5rem;
+  color: #1a3c5e;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.rooms-intro h3 {
+  font-size: 1.8rem;
+  color: #1a3c5e;
+  position: relative;
+  padding-left: 20px;
+}
+.rooms-intro h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: #1a3c5e;
+}
+.rooms-intro p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.rooms-intro .btn {
+  border-color: #f5c518;
+  color: #f5c518;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.rooms-intro img {
+  border-radius: 10px;
+} */
+
+/* Features Section */
+.features {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+.features h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1a2a44;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.feature-item {
+  margin-bottom: 60px;
+}
+.feature-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.feature-text h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+.feature-text h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #f5c518;
+}
+.feature-text p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.feature-text .btn-warning {
+  background-color: #f5c518;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+.feature-text .btn-warning:hover {
+  background-color: #e0b015;
+}
+.feature-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rooms Section */
+.rooms {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+.rooms h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+}
+.rooms p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.room-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.room-card:hover {
+  transform: translateY(-5px);
+}
+.room-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.room-info {
+  padding: 15px;
+}
+.room-info h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+.room-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.room-actions .btn-outline-primary {
+  border-color: #f5c518;
+  color: #f5c518;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.room-actions .btn-outline-primary:hover {
+  background-color: #f5c518;
+  color: #333;
+}
+.room-actions .price {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Booking Section */
+.booking-section {
+  padding: 50px 0;
+  min-height: 80vh;
+}
+.booking-section h2 {
+  font-size: 2rem;
+  color: #1a3c5e;
+  text-transform: uppercase;
+}
+.booking-section p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.booking-form .form-label {
+  color: #1a3c5e;
+  font-size: 1rem;
+}
+.booking-form .btn {
+  background: #f5c518;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* Admin Section */
+.admin-section {
+  padding: 50px 0;
+  min-height: 80vh;
+}
+.admin-section h2 {
+  font-size: 2rem;
+  color: #1a3c5e;
+  text-transform: uppercase;
+}
+.admin-section h3 {
+  font-size: 1.5rem;
+  color: #1a3c5e;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.admin-section p {
+  color: #666;
+  font-size: 1rem;
+}
+.admin-section .btn {
+  background: #f5c518;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.admin-section .booking-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 0;
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 20px;
+}
+.testimonials p {
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a2a44;
+  color: #fff;
+  padding: 50px 0;
+}
+.footer .logo {
+  height: 40px;
+  background: #f5c518;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.footer p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.footer ul li a:hover {
+  color: #f5c518;
+}
+.footer .form-control {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+}
+.footer .form-control::placeholder {
+  color: #ccc;
+}
+.footer .btn-warning {
+  background-color: #f5c518;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+.footer .btn-warning:hover {
+  background-color: #e0b015;
+}
+
+/* Auth Modal Tabs */
+.nav-tabs {
+  border-bottom: 2px solid #f5c518;
+}
+.nav-tabs .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+.nav-tabs .nav-link.active {
+  color: #f5c518 !important;
+  border-bottom: 2px solid #f5c518;
+}
+.nav-tabs .nav-link:hover {
+  color: #f5c518 !important;
+}
+
+/* Auth Modal */
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.modal-header {
+  background-color: #f5c518;
+  color: #333;
+  border-bottom: none;
+  padding: 15px 20px;
+}
+.modal-title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.modal-body {
+  padding: 30px;
+}
+.modal .form-label {
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.modal .form-control {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+.modal .form-control:focus {
+  border-color: #f5c518;
+  box-shadow: 0 0 5px rgba(245, 197, 24, 0.3);
+  outline: none;
+}
+.modal .btn-warning {
+  background-color: #f5c518;
+  border: none;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+.modal .btn-warning:hover {
+  background-color: #e0b015;
+}
+

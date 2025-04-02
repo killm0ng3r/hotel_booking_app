@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maji Breeze Resort</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Maji Breeze Resort" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
+            <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="booking.html">Book Now</a></li>
+            <li class="nav-item"><a class="nav-link admin-link" href="admin.html">Admin</a></li>
+            <li class="nav-item">
+              <button class="nav-link btn btn-link auth-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>Maji Breeze</span> Resort</h1>
+      <p>Book your stay and enjoy luxury redefined at the most affordable rates.</p>
+      <a href="booking.html" class="btn btn-warning">Book Now</a>
+    </div>
+    <div class="scroll-indicator">
+      <p>Scroll</p>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>All our room types are including complementary breakfast</h2>
+      <div class="row mt-5 feature-item">
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="feature-text">
+            <h3>Luxury Redefined</h3>
+            <p>Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.</p>
+            <a href="rooms.html" class="btn btn-warning">Explore</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/luxury-room.jpg" alt="Luxury Room" class="img-fluid feature-img">
+        </div>
+      </div>
+      <div class="row mt-5 feature-item">
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="feature-text">
+            <h3>Leave Your Worries in the Sand</h3>
+            <p>We love life at the beach. Being close to the ocean with access to endless sandy beaches ensures a relaxed state of mind. It seems like time stands still watching the ocean.</p>
+            <a href="#" class="btn btn-warning">Explore</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/beach.jpg" alt="Beach" class="img-fluid feature-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials text-center">
+    <h2>Testimonials</h2>
+    <blockquote>
+      <p>"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+      <cite>Mr. and Mrs. Kasongo, Kenya</cite>
+    </blockquote>
+    <div class="carousel-indicators">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/logo.png" alt="Maji Breeze Resort" class="logo">
+          <p>Maji Breeze Resort<br>Mombasa, Kenya<br>Majibreeze@gmail.com</p>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p>Subscribe to the newsletter</p>
+          <form>
+            <input type="email" placeholder="Email Address" class="form-control">
+            <button type="submit" class="btn btn-warning mt-2">OK</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Auth Modal -->
+<div class="modal fade" id="authModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Authentication</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Tabs for Login and Sign Up -->
+        <ul class="nav nav-tabs" id="authTabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="login-tab" data-bs-toggle="tab" href="#login" role="tab">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab">Sign Up</a>
+          </li>
+        </ul>
+        <div class="tab-content mt-3">
+          <!-- Login Form -->
+          <div class="tab-pane fade show active" id="login" role="tabpanel">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="loginEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+              </div>
+              <button type="submit" class="btn btn-warning">Login</button>
+            </form>
+          </div>
+          <!-- Sign Up Form -->
+          <div class="tab-pane fade" id="signup" role="tabpanel">
+            <form id="signupForm">
+              <div class="mb-3">
+                <label for="signupEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signupEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signupPassword" required>
+              </div>
+              <button type="submit" class="btn btn-warning">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

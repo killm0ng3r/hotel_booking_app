@@ -1,0 +1,24 @@
+{
+  "name": "hotel-booking-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "deploy": "firebase deploy"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^6.11.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "firebase": "^11.5.0"
+  }
+}
